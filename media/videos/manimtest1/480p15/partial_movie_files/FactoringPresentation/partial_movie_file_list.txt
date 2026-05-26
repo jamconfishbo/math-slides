@@ -1,0 +1,12 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/jamesconradfischer/MyCode/manimtest/media/videos/manimtest1/480p15/partial_movie_files/FactoringPresentation/1584795214_2502632189_223132457.mp4'
+file 'file:/Users/jamesconradfischer/MyCode/manimtest/media/videos/manimtest1/480p15/partial_movie_files/FactoringPresentation/4072820271_3736808406_2958510596.mp4'
+file 'file:/Users/jamesconradfischer/MyCode/manimtest/media/videos/manimtest1/480p15/partial_movie_files/FactoringPresentation/4072820271_2834709167_215753450.mp4'
+file 'file:/Users/jamesconradfischer/MyCode/manimtest/media/videos/manimtest1/480p15/partial_movie_files/FactoringPresentation/4072820271_3290962001_884056259.mp4'
+file 'file:/Users/jamesconradfischer/MyCode/manimtest/media/videos/manimtest1/480p15/partial_movie_files/FactoringPresentation/4072820271_1868619899_3423492165.mp4'
+file 'file:/Users/jamesconradfischer/MyCode/manimtest/media/videos/manimtest1/480p15/partial_movie_files/FactoringPresentation/4072820271_777461275_3421331092.mp4'
+file 'file:/Users/jamesconradfischer/MyCode/manimtest/media/videos/manimtest1/480p15/partial_movie_files/FactoringPresentation/4072820271_1620713727_2313291382.mp4'
+file 'file:/Users/jamesconradfischer/MyCode/manimtest/media/videos/manimtest1/480p15/partial_movie_files/FactoringPresentation/4072820271_1345763570_2929645058.mp4'
+file 'file:/Users/jamesconradfischer/MyCode/manimtest/media/videos/manimtest1/480p15/partial_movie_files/FactoringPresentation/4072820271_576103639_966422715.mp4'
+file 'file:/Users/jamesconradfischer/MyCode/manimtest/media/videos/manimtest1/480p15/partial_movie_files/FactoringPresentation/4072820271_1003422385_2313291382.mp4'
+file 'file:/Users/jamesconradfischer/MyCode/manimtest/media/videos/manimtest1/480p15/partial_movie_files/FactoringPresentation/4072820271_2834709167_2032533058.mp4'
