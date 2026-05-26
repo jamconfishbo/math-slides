@@ -164,10 +164,13 @@ class FactoringPresentation(Slide):
     print("--> Converting to HTML slides...")
     subprocess.run(["manim-slides", "convert", "FactoringPresentation", f"{dir_path}/index.html"], check=True)
     
-    # --- 4. DASHBOARD UPDATE ---
+   # --- 4. DASHBOARD UPDATE ---
     dashboard_path = "math-slides/index.html"
-    link_html = f'<li><a href="algebra/{problem_name}/index.html">{a}x² {format_sign(b)} {abs(b)}x {format_sign(c)} {abs(c)}</a></li>\n'
+    # Format the link label cleanly
+    display_label = f"{a}x² {format_sign(b)} {abs(b)}x {format_sign(c)} {abs(c)}"
+    link_html = f'<li><a href="algebra/{problem_name}/index.html">{display_label}</a></li>\n'
     
+    # Ensure the dashboard file exists
     if not os.path.exists(dashboard_path):
         with open(dashboard_path, "w") as f:
             f.write("<h1>Math Slides Dashboard</h1>\n<h2>Algebra</h2>\n<ul>\n</ul>")
@@ -175,10 +178,21 @@ class FactoringPresentation(Slide):
     with open(dashboard_path, "r") as f:
         content = f.readlines()
         
-    if link_html not in content:
-        content.insert(content.index("</ul>\n"), link_html)
-        with open(dashboard_path, "w") as f:
-            f.writelines(content)
+    # Find the index of the line containing </ul>
+    try:
+        # Search for the list closing tag
+        index = next(i for i, line in enumerate(content) if "</ul>" in line)
+        
+        # Only add if the link isn't already there
+        if link_html not in content:
+            content.insert(index, link_html)
+            with open(dashboard_path, "w") as f:
+                f.writelines(content)
+                
+    except StopIteration:
+        # If </ul> is missing, just append a new list to the end
+        with open(dashboard_path, "a") as f:
+            f.write(f"\n<ul>\n{link_html}</ul>\n")
 
     # Cleanup temp files
     os.remove("temp_manim.py")
